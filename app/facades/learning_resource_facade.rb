@@ -11,6 +11,5 @@ class LearningResourceFacade
       video: video,
       images: images
     })
-    require 'pry'; binding.pry
   end
 end
