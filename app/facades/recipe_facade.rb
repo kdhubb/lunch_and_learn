@@ -10,7 +10,9 @@ class RecipeFacade
   def recipes_by_country
     recipes = service.get_recipes_by_country(@country)
     recipes[:hits].map do |recipe|
-      Recipe.new(recipe)
+      new_recipe = Recipe.new(recipe)
+      new_recipe.set_country(@country)
+      new_recipe
     end
   end
 end
