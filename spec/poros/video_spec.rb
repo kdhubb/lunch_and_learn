@@ -5,11 +5,11 @@ RSpec.describe Video do
     it "can initialize with attributes" do 
       video = Video.new({
         title: "Title",
-        video_id: "here_is_id"
+        videoId: "here_is_id"
       })
 
       expect(video.title).to eq("Title")
-      expect(video.video_id).to eq("here_is_id")
+      expect(video.youtube_video_id).to eq("here_is_id")
     end
   end
 end
