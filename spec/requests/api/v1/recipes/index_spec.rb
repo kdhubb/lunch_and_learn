@@ -30,7 +30,7 @@ RSpec.describe "Search Recipes", type: :request do
 
     it "can return a list of recipes with random country" do 
       request = get "/api/v1/recipes?choose_country_for_me=true" 
-      parsed = JSON.parse(response.body, symbolize_name: true)
+      parsed = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to be_successful
 

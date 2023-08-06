@@ -194,7 +194,8 @@
         "lines": [
           1,
           1,
-          2,
+          1,
+          1,
           null,
           null
         ]
@@ -220,73 +221,30 @@
         "lines": [
           1,
           1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          24,
-          24,
-          24,
-          null,
-          null,
-          null,
-          1,
-          2,
-          1,
-          null,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/recipe_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/recipe.rb": {
-        "lines": [
           1,
           1,
           null,
           null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          10,
+          10,
+          10,
           null,
           null,
           null,
           1,
-          24,
-          24,
-          24,
-          24,
-          24,
-          null,
+          1,
+          1,
           null,
           1,
-          24,
+          1,
           null,
           null
         ]
@@ -337,8 +295,53 @@
           null,
           null
         ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/recipe_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/recipe.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          null,
+          null,
+          1,
+          10,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1691301194
+    "timestamp": 1691301827
   }
 }
