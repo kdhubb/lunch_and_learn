@@ -190,6 +190,50 @@
           null
         ]
       },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/serializers/learning_resource_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/learning_resource_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/video_facade.rb": {
         "lines": [
           1,
@@ -243,8 +287,74 @@
           null,
           null
         ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/image_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          10,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/image_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/image.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          10,
+          10,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/learning_resource.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1691360954
+    "timestamp": 1691362288
   }
 }
