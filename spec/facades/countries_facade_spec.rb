@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe CountriesFacade do 
   describe "instance methods" do 
-    it "#countries_list" do
+    it "#countries_list", :vcr do
 
       search = CountriesFacade.new.countries_list
 
