@@ -1,5 +1,4 @@
 require "rails_helper" 
-require "./app/poros/recipe.rb"
 
 RSpec.describe RecipeFacade do 
   describe "instance methods" do 
