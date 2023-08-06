@@ -20,13 +20,13 @@ RSpec.describe "Learning Resource", type: :request do
       expect(learning_resource[:attributes][:images][0][:alt_tag]).to eq("time lapse photography of flying hot air balloon")
     end
     
-    it "will return empty video and images if none are found" do 
+    it "will return empty video and images if none are found", :vcr do 
       get "/api/v1/learning_resources?country="""
       parsed = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to be_successful
       learning_resource = parsed[:data]
-require 'pry'; binding.pry
+
       expect(learning_resource[:id]).to be(nil)
       expect(learning_resource[:type]).to eq("learning_resource")
       expect(learning_resource[:attributes][:country]).to eq("")
