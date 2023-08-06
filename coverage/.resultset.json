@@ -190,6 +190,31 @@
           null
         ]
       },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/serializers/learning_resource_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/learning_resource_facade.rb": {
         "lines": [
           1,
@@ -326,6 +351,6 @@
         ]
       }
     },
-    "timestamp": 1691358927
+    "timestamp": 1691359938
   }
 }
