@@ -14,6 +14,7 @@ RSpec.describe RecipeFacade do
       expect(recipes[0].url).to eq("http://www.edamam.com/ontologies/edamam.owl#recipe_3a551652abf5a1cef1421660d1b657d9")
       expect(recipes[0].image).to be_a(String)
       expect(recipes[0].country).to eq("Thailand")
+      expect(recipes[0].class.instance_methods(false).count).to 
     end
   end
 end

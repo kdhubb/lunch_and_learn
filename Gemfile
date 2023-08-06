@@ -53,6 +53,7 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem "shoulda-matchers"
+  gem 'rspec_jsonapi_serializer'
 end
 
 group :development do
