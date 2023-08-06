@@ -11,12 +11,29 @@ class RecipeFacade
   def recipes_by_country
     if @random == "true"
       randomize_country
-    end
-    recipes = service.get_recipes_by_country(@country)
-    recipes[:hits].map do |recipe|
-      new_recipe = Recipe.new(recipe)
-      new_recipe.set_country(@country)
-      new_recipe
+      recipes = service.get_recipes_by_country(@country)
+      recipe_objects = recipes[:hits].map do |recipe|
+        new_recipe = Recipe.new(recipe)
+        new_recipe.set_country(@country)
+        new_recipe
+      end
+      until recipes != [] do 
+        recipes = service.get_recipes_by_country(@country)
+        recipe_objects_next_random = recipes[:hits].map do |recipe|
+          new_recipe = Recipe.new(recipe)
+          new_recipe.set_country(@country)
+          new_recipe
+        end
+      end
+      recipe_objects || recipe_objects_next_random
+    else
+      recipes = service.get_recipes_by_country(@country)
+      recipe_objects = recipes[:hits].map do |recipe|
+        new_recipe = Recipe.new(recipe)
+        new_recipe.set_country(@country)
+        new_recipe
+      end
+      recipe_objects
     end
   end
 

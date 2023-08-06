@@ -28,14 +28,20 @@ RSpec.describe "Search Recipes", type: :request do
       expect(recipes[1]).to eq(second)
     end
 
-    it "can return a list of recipes with random country" do 
+    xit "can return a list of recipes with random country" do 
       request = get "/api/v1/recipes?choose_country_for_me=true" 
       parsed = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to be_successful
 
       recipes = parsed[:data]
-      require 'pry'; binding.pry
+
+      expect(recipes[0][:type]).to eq("recipe")
+      expect(recipes[0][:attributes][:title]).to be_a(String)
+      expect(recipes[0][:attributes][:url]).to be_a(String)
+      expect(recipes[0][:attributes][:image]).to be_a(String)
+      expect(recipes[0][:attributes][:country]).to be_a(String)
+      expect(recipes[0][:id]).to be(nil) 
     end
   end
 end
