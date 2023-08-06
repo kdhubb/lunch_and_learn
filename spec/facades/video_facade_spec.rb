@@ -3,10 +3,8 @@ require "rails_helper"
 RSpec.describe VideoFacade do 
   describe "instance methods" do 
     it "#video_by_country", :vcr do
-      query = {
-        country: "Laos"
-      }
-      video = VideoFacade.new(query).video_by_country
+      query = "Laos"
+      video = VideoFacade.new.video_by_country(query)
       
       expect(video).to be_a(Video)
       expect(video.title).to eq("A Super Quick History of Laos")

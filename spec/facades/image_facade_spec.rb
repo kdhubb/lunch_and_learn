@@ -3,8 +3,8 @@ require "rails_helper"
 RSpec.describe ImageFacade do 
   describe "instance methods" do 
     it "#images_by_country", :vcr do
-      query = {country: "Laos"}
-      search = ImageFacade.new(query).images_by_country
+      query = "Laos"
+      search = ImageFacade.new.images_by_country(query)
 
       expect(search).to be_an(Array)
       expect(search[0].url).to be_a(String)

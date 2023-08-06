@@ -5,8 +5,8 @@ class LearningResource
                 :images
   def initialize(data = {})
     @id = nil
-    @country = country
-    @video = {}
-    @images = []
+    @country = data[:country]
+    @video = data[:video]
+    @images = data[:images]
   end
 end
