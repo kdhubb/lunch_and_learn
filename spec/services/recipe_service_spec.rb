@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe RecipeService do 
   describe "instance methods" do 
-    it "#get_recipes_by_country" do 
+    it "#get_recipes_by_country", :vcr do 
       country = "Thailand" 
       search = RecipeService.new.get_recipes_by_country(country)
 
