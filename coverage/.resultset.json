@@ -190,54 +190,18 @@
           null
         ]
       },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/countries_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          250,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/countries_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/country.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          250,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1691299405
+    "timestamp": 1691300013
   }
 }

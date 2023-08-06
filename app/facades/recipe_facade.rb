@@ -1,6 +1,7 @@
 class RecipeFacade
   def initialize(data = {})
     @country = data[:country]
+    @random = data[:choose_country_for_me]
   end
 
   def service 
@@ -14,5 +15,12 @@ class RecipeFacade
       new_recipe.set_country(@country)
       new_recipe
     end
+  end
+
+  def recipe_search
+    if @random == true 
+      CountriesFacade.new.countries_list.sample.name = @country
+    end
+    recipes_by_country
   end
 end
