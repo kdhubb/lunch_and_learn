@@ -9,8 +9,10 @@ class RecipeFacade
   end
 
   def recipes_by_country
+    if @random == "true"
+      randomize_country
+    end
     recipes = service.get_recipes_by_country(@country)
-    require 'pry'; binding.pry
     recipes[:hits].map do |recipe|
       new_recipe = Recipe.new(recipe)
       new_recipe.set_country(@country)
@@ -18,11 +20,7 @@ class RecipeFacade
     end
   end
 
-  def recipe_search
-    if @random == "true" 
+  def randomize_country
       @country = CountriesFacade.new.countries_list.sample.name
-    end
-    stuff = recipes_by_country
-    require 'pry'; binding.pry
   end
 end
