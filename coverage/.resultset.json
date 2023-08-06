@@ -190,20 +190,13 @@
           null
         ]
       },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/image_service.rb": {
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/image.rb": {
         "lines": [
           1,
           1,
-          1,
-          1,
-          null,
           null,
           null,
           1,
-          1,
-          1,
-          null,
-          null,
           1,
           1,
           null,
@@ -211,6 +204,6 @@
         ]
       }
     },
-    "timestamp": 1691356454
+    "timestamp": 1691356855
   }
 }
