@@ -18,8 +18,8 @@ class RecipeFacade
   end
 
   def recipe_search
-    if @random == true 
-      CountriesFacade.new.countries_list.sample.name = @country
+    if @random == "true" 
+      @country = CountriesFacade.new.countries_list.sample.name
     end
     recipes_by_country
   end

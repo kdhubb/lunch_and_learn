@@ -190,6 +190,107 @@
           null
         ]
       },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/api/v1/recipes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/serializers/recipe_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/recipe_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          24,
+          24,
+          24,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/recipe_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/recipe.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          24,
+          24,
+          24,
+          24,
+          24,
+          null,
+          null,
+          1,
+          24,
+          null,
+          null
+        ]
+      },
       "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/countries_facade.rb": {
         "lines": [
           1,
@@ -238,6 +339,6 @@
         ]
       }
     },
-    "timestamp": 1691300066
+    "timestamp": 1691301194
   }
 }
