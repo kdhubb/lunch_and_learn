@@ -19,7 +19,7 @@ class ErrorSerializer
       errors: [
         {
           status: '400',
-          title: @error
+          title: @error.message
         }
       ]
     }
