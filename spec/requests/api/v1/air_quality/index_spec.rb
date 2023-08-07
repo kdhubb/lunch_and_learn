@@ -35,5 +35,14 @@ RSpec.describe "Get Air Quality", type: :request do
       expect(air_quality[:attributes][:co_concentration]).to be_a(Float)
       expect(air_quality[:attributes][:city]).to be_a(String)
     end
+
+    it "returns an error if an invalid country is entered", :vcr do 
+      get "/api/v1/air_quality?country=blah"
+      parsed = JSON.parse(response.body, symbolize_names: true)
+      
+      expect(response).to_not be_successful
+      expect(response.status).to eq(404)
+      expect(parsed).to eq({error: "Invalid country"})
+    end
   end
 end
