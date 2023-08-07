@@ -35,4 +35,15 @@ class ErrorSerializer
       ]
     }
   end
+
+  def forbidden
+    {
+      errors: [
+        {
+          status: '403',
+          title: @error
+        }
+      ]
+    }
+  end
 end
