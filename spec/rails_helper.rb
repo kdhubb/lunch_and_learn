@@ -2,6 +2,7 @@
 require 'spec_helper'
 
 require "simplecov"
+require 'bcrypt'
 
 SimpleCov.start 
 
