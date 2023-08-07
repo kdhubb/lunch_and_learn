@@ -72,5 +72,49 @@ RSpec.describe "Create a New User" do
       expect(response.code).to eq("400")
       expect(parsed).to eq(expected)
     end
+
+    it "sends an error if email is missing" do 
+      params = {
+        "name": "Odell",
+        "password": "treats4lyf",
+        "password_confirmation": "treats4lyf"
+      }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+      post "/api/v1/users", headers: headers, params: JSON.generate(params)
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expected = {
+        errors: [
+          {
+            status: '400',
+            title: "Validation failed: Email can't be blank"
+          }
+        ]
+      }
+      expect(response.code).to eq("400")
+      expect(parsed).to eq(expected)
+    end
+
+    it "sends an error if name is missing" do 
+      params = {
+        "email": "goodboy@ruffruff.com",
+        "password": "treats4lyf",
+        "password_confirmation": "treats4lyf"
+      }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+      post "/api/v1/users", headers: headers, params: JSON.generate(params)
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expected = {
+        errors: [
+          {
+            status: '400',
+            title: "Validation failed: Name can't be blank"
+          }
+        ]
+      }
+      expect(response.code).to eq("400")
+      expect(parsed).to eq(expected)
+    end
   end
 end
