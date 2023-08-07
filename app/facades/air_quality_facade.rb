@@ -8,7 +8,13 @@ class AirQualityFacade
     AirQualityService.new
   end
 
+  def get_capital
+    CapitalService.new.get_capital_by_country(@country)
+  end
+
   def aqi_by_capital
-    
+    capital = get_capital
+    aqi = service.get_aqi_by_capital(capital)
+    api
   end
 end
