@@ -191,20 +191,19 @@
           null
         ]
       },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/capital_service.rb": {
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/air_quality_service.rb": {
         "lines": [
           1,
-          1,
-          2,
-          null,
           null,
           1,
-          2,
-          2,
+          1,
+          1,
+          null,
           null,
           null,
           1,
-          2,
+          1,
+          1,
           null,
           null,
           1,
@@ -214,6 +213,6 @@
         ]
       }
     },
-    "timestamp": 1691422046
+    "timestamp": 1691422650
   }
 }

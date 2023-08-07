@@ -1,14 +1,17 @@
-def conn
-  Faraday.new(url: "https://api.unsplash.com/search/photos") do |faraday|
-    faraday.params['client_id'] = ENV['UNSPLASH-ACCESS']
+class AirQualityService 
+
+  def conn
+    Faraday.new(url: 'https://api.api-ninjas.com/v1/') do |faraday|
+      faraday.headers['X-Api-Key'] = ENV['API-NINJAS']
+    end
   end
-end
 
-def get_url(url)
-  response = conn.get(url)
-  JSON.parse(response.body, symbolize_names: true)
-end
+  def get_url(url)
+    response = conn.get(url)
+    JSON.parse(response.body, symbolize_names: true)
+  end
 
-def get_images_by_country(country)
-  stuff = get_url("?query=#{country}")
+  def get_aqi_by_capital(city)
+    get_url("airquality?city=#{city}")
+  end
 end
