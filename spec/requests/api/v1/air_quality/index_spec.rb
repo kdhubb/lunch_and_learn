@@ -44,5 +44,14 @@ RSpec.describe "Get Air Quality", type: :request do
       expect(response.status).to eq(404)
       expect(parsed).to eq({error: "Invalid country"})
     end
+
+    it "returns an error if no parameters given", :vcr do 
+      get "/api/v1/air_quality?"
+      parsed = JSON.parse(response.body, symbolize_names: true)
+      
+      expect(response).to_not be_successful
+      expect(response.status).to eq(418)
+      expect(parsed).to eq({error: "No parameters given"})
+    end
   end
 end
