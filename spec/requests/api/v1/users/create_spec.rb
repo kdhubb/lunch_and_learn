@@ -47,5 +47,30 @@ RSpec.describe "Create a New User" do
       expect(response.code).to eq("400")
       expect(parsed).to eq(expected)
     end
+
+    it "sends an error if email isn't unique" do 
+      User.create!(name: "Wolfie", email: "goodboy@ruffruff.com")
+      
+      params = {
+        "name": "Odell",
+        "email": "goodboy@ruffruff.com",
+        "password": "treats4lyf",
+        "password_confirmation": "treats4lyf"
+      }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+      post "/api/v1/users", headers: headers, params: JSON.generate(params)
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expected = {
+        errors: [
+          {
+            status: '400',
+            title: "Validation failed: Email has already been taken"
+          }
+        ]
+      }
+      expect(response.code).to eq("400")
+      expect(parsed).to eq(expected)
+    end
   end
 end
