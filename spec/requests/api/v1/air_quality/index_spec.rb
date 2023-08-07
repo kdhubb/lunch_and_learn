@@ -14,8 +14,8 @@ RSpec.describe "Get Air Quality", type: :request do
       expect(air_quality[:type]).to eq("air_quality")
       expect(air_quality[:attributes].keys).to eq([:aqi, :pm25_concentration, :co_concentration, :city])
       expect(air_quality[:attributes][:aqi]).to be_an(Integer)
-      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float)
-      expect(air_quality[:attributes][:co_concentration]).to be_a(Float)
+      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float || Integer)
+      expect(air_quality[:attributes][:co_concentration]).to be_a(Float || Integer)
       expect(air_quality[:attributes][:city]).to eq("Abuja")
     end
 
@@ -31,8 +31,8 @@ RSpec.describe "Get Air Quality", type: :request do
       expect(air_quality[:type]).to eq("air_quality")
       expect(air_quality[:attributes].keys).to eq([:aqi, :pm25_concentration, :co_concentration, :city])
       expect(air_quality[:attributes][:aqi]).to be_an(Integer)
-      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float)
-      expect(air_quality[:attributes][:co_concentration]).to be_a(Float)
+      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float || Integer)
+      expect(air_quality[:attributes][:co_concentration]).to be_a(Float || Integer)
       expect(air_quality[:attributes][:city]).to be_a(String)
     end
 

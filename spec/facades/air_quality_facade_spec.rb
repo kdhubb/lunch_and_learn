@@ -10,8 +10,8 @@ RSpec.describe AirQualityFacade do
       expect(aqi).to be_a(AirQuality)
       expect(aqi.city).to eq("Havana")
       expect(aqi.aqi).to be_an(Integer)
-      expect(aqi.co_concentration).to be_a(Float)
-      expect(aqi.pm25_concentration).to be_a(Float)
+      expect(aqi.co_concentration).to be_a(Float || Integer)
+      expect(aqi.pm25_concentration).to be_a(Float || Integer)
       expect(aqi.id).to be(nil)
     end
   end

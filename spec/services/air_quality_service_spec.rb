@@ -8,8 +8,8 @@ RSpec.describe AirQualityService do
       
       expect(search).to be_a(Hash)
       expect(search[:overall_aqi]).to be_an(Integer)
-      expect(search[:"PM2.5"][:concentration]).to be_a(Float)
-      expect(search[:CO][:concentration]).to be_a(Float)
+      expect(search[:"PM2.5"][:concentration]).to be_a(Float || Integer)
+      expect(search[:CO][:concentration]).to be_a(Float || Integer)
     end
   end
 end

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-07T11:33:41-06:00">2023-08-07T11:33:41-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-07T11:43:09-06:00">2023-08-07T11:43:09-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -10480,7 +10480,7 @@
 
             
 
-            <code class="ruby">      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float)</code>
+            <code class="ruby">      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float || Integer)</code>
           </li>
         </div>
       
@@ -10491,7 +10491,7 @@
 
             
 
-            <code class="ruby">      expect(air_quality[:attributes][:co_concentration]).to be_a(Float)</code>
+            <code class="ruby">      expect(air_quality[:attributes][:co_concentration]).to be_a(Float || Integer)</code>
           </li>
         </div>
       
@@ -10667,7 +10667,7 @@
 
             
 
-            <code class="ruby">      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float)</code>
+            <code class="ruby">      expect(air_quality[:attributes][:pm25_concentration]).to be_a(Float || Integer)</code>
           </li>
         </div>
       
@@ -10678,7 +10678,7 @@
 
             
 
-            <code class="ruby">      expect(air_quality[:attributes][:co_concentration]).to be_a(Float)</code>
+            <code class="ruby">      expect(air_quality[:attributes][:co_concentration]).to be_a(Float || Integer)</code>
           </li>
         </div>
       
@@ -12331,7 +12331,7 @@
 
             
 
-            <code class="ruby">      expect(search[:&quot;PM2.5&quot;][:concentration]).to be_a(Float)</code>
+            <code class="ruby">      expect(search[:&quot;PM2.5&quot;][:concentration]).to be_a(Float || Integer)</code>
           </li>
         </div>
       
@@ -12342,7 +12342,7 @@
 
             
 
-            <code class="ruby">      expect(search[:CO][:concentration]).to be_a(Float)</code>
+            <code class="ruby">      expect(search[:CO][:concentration]).to be_a(Float || Integer)</code>
           </li>
         </div>
       
