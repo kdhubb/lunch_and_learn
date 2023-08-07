@@ -1,6 +1,6 @@
 class Api::V1::AirQualityController < ApplicationController
   def index
-    if !params[:country].present?
+    if !params.has_key?(:country)
       render json: {error: "No parameters given"}, status: 418
     elsif params[:country] == ("" || " ")
       render json: AirQualitySerializer.new(AirQualityFacade.new(params).aqi_by_capital)
