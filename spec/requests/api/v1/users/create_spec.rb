@@ -49,7 +49,7 @@ RSpec.describe "Create a New User" do
     end
 
     it "sends an error if email isn't unique" do 
-      User.create!(name: "Wolfie", email: "goodboy@ruffruff.com")
+      User.create!(name: "Wolfie", email: "goodboy@ruffruff.com", password: "password")
       
       params = {
         "name": "Odell",
