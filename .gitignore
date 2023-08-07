@@ -30,4 +30,5 @@
 /config/application.yml
 
 # Ignore simplecov files
-./coverage/
+/coverage.data
+/coverage/
