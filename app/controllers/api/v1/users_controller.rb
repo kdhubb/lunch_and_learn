@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
       user.update(api_key: Lockbox.generate_key)
       render json: UserSerializer.new(user), status: :created
     else
-      render json: ErrorSerializer.new("Password and password confirmation must match", "400"), status: :bad_request
+      render json: ErrorSerializer.new("Password and password confirmation must match").bad_request, status: :bad_request
     end
   end
 
