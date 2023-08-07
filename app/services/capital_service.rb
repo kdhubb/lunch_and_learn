@@ -13,6 +13,8 @@ class CapitalService
   end
 
   def get_capital_by_country(country)
-    get_country_data(country).first[:capital].first
+    if country
+      get_country_data(country).first[:capital].first
+    end
   end
 end
