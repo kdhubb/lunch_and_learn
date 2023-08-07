@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/Cuba
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Aug 2023 16:01:40 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Cache-Control:
+      - public, immutable, max-age=31556926
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3120'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6eyJjb21tb24iOiJDdWJhIiwib2ZmaWNpYWwiOiJSZXB1YmxpYyBvZiBDdWJhIiwibmF0aXZlTmFtZSI6eyJzcGEiOnsib2ZmaWNpYWwiOiJSZXDDumJsaWNhIGRlIEN1YmEiLCJjb21tb24iOiJDdWJhIn19fSwidGxkIjpbIi5jdSJdLCJjY2EyIjoiQ1UiLCJjY24zIjoiMTkyIiwiY2NhMyI6IkNVQiIsImNpb2MiOiJDVUIiLCJpbmRlcGVuZGVudCI6dHJ1ZSwic3RhdHVzIjoib2ZmaWNpYWxseS1hc3NpZ25lZCIsInVuTWVtYmVyIjp0cnVlLCJjdXJyZW5jaWVzIjp7IkNVQyI6eyJuYW1lIjoiQ3ViYW4gY29udmVydGlibGUgcGVzbyIsInN5bWJvbCI6IiQifSwiQ1VQIjp7Im5hbWUiOiJDdWJhbiBwZXNvIiwic3ltYm9sIjoiJCJ9fSwiaWRkIjp7InJvb3QiOiIrNSIsInN1ZmZpeGVzIjpbIjMiXX0sImNhcGl0YWwiOlsiSGF2YW5hIl0sImFsdFNwZWxsaW5ncyI6WyJDVSIsIlJlcHVibGljIG9mIEN1YmEiLCJSZXDDumJsaWNhIGRlIEN1YmEiXSwicmVnaW9uIjoiQW1lcmljYXMiLCJzdWJyZWdpb24iOiJDYXJpYmJlYW4iLCJsYW5ndWFnZXMiOnsic3BhIjoiU3BhbmlzaCJ9LCJ0cmFuc2xhdGlvbnMiOnsiYXJhIjp7Im9mZmljaWFsIjoi2KzZhdmH2YjYsdmK2Kkg2YPZiNio2KciLCJjb21tb24iOiLZg9mI2KjYpyJ9LCJicmUiOnsib2ZmaWNpYWwiOiJSZXB1YmxpayBLdWJhIiwiY29tbW9uIjoiS3ViYSJ9LCJjZXMiOnsib2ZmaWNpYWwiOiJLdWLDoW5za8OhIHJlcHVibGlrYSIsImNvbW1vbiI6Ikt1YmEifSwiY3ltIjp7Im9mZmljaWFsIjoiR3dlcmluaWFldGggQ2l3YmEiLCJjb21tb24iOiJDaXdiYSJ9LCJkZXUiOnsib2ZmaWNpYWwiOiJSZXB1YmxpayBLdWJhIiwiY29tbW9uIjoiS3ViYSJ9LCJlc3QiOnsib2ZmaWNpYWwiOiJLdXViYSBWYWJhcmlpayIsImNvbW1vbiI6Ikt1dWJhIn0sImZpbiI6eyJvZmZpY2lhbCI6Ikt1dWJhbiB0YXNhdmFsdGEiLCJjb21tb24iOiJLdXViYSJ9LCJmcmEiOnsib2ZmaWNpYWwiOiJSw6lwdWJsaXF1ZSBkZSBDdWJhIiwiY29tbW9uIjoiQ3ViYSJ9LCJocnYiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2EgS3ViYSIsImNvbW1vbiI6Ikt1YmEifSwiaHVuIjp7Im9mZmljaWFsIjoiS3ViYWkgS8O2enTDoXJzYXPDoWciLCJjb21tb24iOiJLdWJhIn0sIml0YSI6eyJvZmZpY2lhbCI6IlJlcHViYmxpY2EgZGkgQ3ViYSIsImNvbW1vbiI6IkN1YmEifSwianBuIjp7Im9mZmljaWFsIjoi44Kt44Ol44O844OQ5YWx5ZKM5Zu9IiwiY29tbW9uIjoi44Kt44Ol44O844OQIn0sImtvciI6eyJvZmZpY2lhbCI6Iuy/oOuwlCDqs7XtmZTqta0iLCJjb21tb24iOiLsv6DrsJQifSwibmxkIjp7Im9mZmljaWFsIjoiUmVwdWJsaWVrIEN1YmEiLCJjb21tb24iOiJDdWJhIn0sInBlciI6eyJvZmZpY2lhbCI6Itis2YXZh9mI2LHbjCDaqdmI2KjYpyIsImNvbW1vbiI6Itqp2YjYqNinIn0sInBvbCI6eyJvZmZpY2lhbCI6IlJlcHVibGlrYSBLdWJ5IiwiY29tbW9uIjoiS3ViYSJ9LCJwb3IiOnsib2ZmaWNpYWwiOiJSZXDDumJsaWNhIGRlIEN1YmEiLCJjb21tb24iOiJDdWJhIn0sInJ1cyI6eyJvZmZpY2lhbCI6ItCg0LXRgdC/0YPQsdC70LjQutCwINCa0YPQsdCwIiwiY29tbW9uIjoi0JrRg9Cx0LAifSwic2xrIjp7Im9mZmljaWFsIjoiS3Viw6Fuc2thIHJlcHVibGlrYSIsImNvbW1vbiI6Ikt1YmEifSwic3BhIjp7Im9mZmljaWFsIjoiUmVww7pibGljYSBkZSBDdWJhIiwiY29tbW9uIjoiQ3ViYSJ9LCJzcnAiOnsib2ZmaWNpYWwiOiLQoNC10L/Rg9Cx0LvQuNC60LAg0JrRg9Cx0LAiLCJjb21tb24iOiLQmtGD0LHQsCJ9LCJzd2UiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2VuIEt1YmEiLCJjb21tb24iOiJLdWJhIn0sInR1ciI6eyJvZmZpY2lhbCI6IkvDvGJhIEN1bWh1cml5ZXRpIiwiY29tbW9uIjoiS8O8YmEifSwidXJkIjp7Im9mZmljaWFsIjoi2KzZhduB2YjYsduM24Eg2qnbjNmI2KjYpyIsImNvbW1vbiI6Itqp24zZiNio2KcifSwiemhvIjp7Im9mZmljaWFsIjoi5Y+k5be05YWx5ZKM5Zu9IiwiY29tbW9uIjoi5Y+k5be0In19LCJsYXRsbmciOlsyMS41LC04MC4wXSwibGFuZGxvY2tlZCI6ZmFsc2UsImFyZWEiOjEwOTg4NC4wLCJkZW1vbnltcyI6eyJlbmciOnsiZiI6IkN1YmFuIiwibSI6IkN1YmFuIn0sImZyYSI6eyJmIjoiQ3ViYWluZSIsIm0iOiJDdWJhaW4ifX0sImZsYWciOiJcdUQ4M0NcdURERThcdUQ4M0NcdURERkEiLCJtYXBzIjp7Imdvb2dsZU1hcHMiOiJodHRwczovL2dvby5nbC9tYXBzLzFkRHcxUWZac3BmTVVUbTk5Iiwib3BlblN0cmVldE1hcHMiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9yZWxhdGlvbi8zMDc4MzMifSwicG9wdWxhdGlvbiI6MTEzMjY2MTYsImZpZmEiOiJDVUIiLCJjYXIiOnsic2lnbnMiOlsiQyJdLCJzaWRlIjoicmlnaHQifSwidGltZXpvbmVzIjpbIlVUQy0wNTowMCJdLCJjb250aW5lbnRzIjpbIk5vcnRoIEFtZXJpY2EiXSwiZmxhZ3MiOnsicG5nIjoiaHR0cHM6Ly9mbGFnY2RuLmNvbS93MzIwL2N1LnBuZyIsInN2ZyI6Imh0dHBzOi8vZmxhZ2Nkbi5jb20vY3Uuc3ZnIiwiYWx0IjoiVGhlIGZsYWcgb2YgQ3ViYSBpcyBjb21wb3NlZCBvZiBmaXZlIGVxdWFsIGhvcml6b250YWwgYmFuZHMgb2YgYmx1ZSBhbHRlcm5hdGluZyB3aXRoIHdoaXRlIGFuZCBhIHJlZCBlcXVpbGF0ZXJhbCB0cmlhbmdsZSBzdXBlcmltcG9zZWQgb24gdGhlIGhvaXN0IHNpZGUgb2YgdGhlIGZpZWxkLiBUaGUgdHJpYW5nbGUgaGFzIGl0cyBiYXNlIG9uIHRoZSBob2lzdCBlbmQsIHNwYW5zIGFib3V0IHR3by1maWZ0aCB0aGUgd2lkdGggb2YgdGhlIGZpZWxkIGFuZCBiZWFycyBhIHdoaXRlIGZpdmUtcG9pbnRlZCBzdGFyIGF0IGl0cyBjZW50ZXIuIn0sImNvYXRPZkFybXMiOnsicG5nIjoiaHR0cHM6Ly9tYWluZmFjdHMuY29tL21lZGlhL2ltYWdlcy9jb2F0c19vZl9hcm1zL2N1LnBuZyIsInN2ZyI6Imh0dHBzOi8vbWFpbmZhY3RzLmNvbS9tZWRpYS9pbWFnZXMvY29hdHNfb2ZfYXJtcy9jdS5zdmcifSwic3RhcnRPZldlZWsiOiJtb25kYXkiLCJjYXBpdGFsSW5mbyI6eyJsYXRsbmciOlsyMy4xMiwtODIuMzVdfSwicG9zdGFsQ29kZSI6eyJmb3JtYXQiOiJDUCAjIyMjIyIsInJlZ2V4IjoiXig/OkNQKSooXFxkezV9KSQifX1d
+  recorded_at: Mon, 07 Aug 2023 16:01:40 GMT
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/airquality?city=Havana
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - vlgex0ir6Q0Tzdomx2Ax/w==ACxlxh2Ejz74o9bI
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '280'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 07 Aug 2023 16:01:41 GMT
+      X-Amzn-Requestid:
+      - 36002413-f3ca-4a10-85d0-dc9eeb3012ab
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - JTBH0HwsPHcFfxg=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-64d11564-144369ea3095e2fe5d8e9660;Sampled=0;lineage=d5ca6d75:0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5a94950aa5895e56460f82b3086d0b0c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - zhVqMxxl7qs9z6WDBq55k4aMMZOb7gZrIkDFbCfl18Tjw6ez8Y7GhA==
+    body:
+      encoding: UTF-8
+      string: '{"CO": {"concentration": 240.33, "aqi": 2}, "NO2": {"concentration":
+        5.57, "aqi": 6}, "O3": {"concentration": 65.09, "aqi": 69}, "SO2": {"concentration":
+        25.99, "aqi": 38}, "PM2.5": {"concentration": 6.57, "aqi": 21}, "PM10": {"concentration":
+        10.78, "aqi": 9}, "overall_aqi": 69}'
+  recorded_at: Mon, 07 Aug 2023 16:01:41 GMT
+recorded_with: VCR 6.2.0

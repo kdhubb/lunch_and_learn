@@ -15,6 +15,8 @@ class AirQualityFacade
   def aqi_by_capital
     capital = get_capital
     aqi = service.get_aqi_by_capital(capital)
-    api
+    air_quality = AirQuality.new(aqi)
+    air_quality.city = capital
+    air_quality
   end
 end
