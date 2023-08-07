@@ -24,5 +24,28 @@ RSpec.describe "Create a New User" do
       expect(parsed[:data][:attributes][:email]).to eq("goodboy@ruffruff.com")
       expect(parsed[:data][:attributes][:api_key]).to be_a(String)
     end
+
+    it "sends an error if password and password confirmation don't match" do 
+      params = {
+        "name": "Odell",
+        "email": "goodboy@ruffruff.com",
+        "password": "treats4ly",
+        "password_confirmation": "treats4lyf"
+      }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
+      post "/api/v1/users", headers: headers, params: JSON.generate(params)
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expected = {
+        errors: [
+          {
+            status: '400',
+            title: "Password and password confirmation must match"
+          }
+        ]
+      }
+      expect(response.code).to eq("400")
+      expect(parsed).to eq(expected)
+    end
   end
 end

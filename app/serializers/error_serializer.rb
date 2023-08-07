@@ -14,12 +14,23 @@ class ErrorSerializer
     }
   end
   
-  def bad_request
+  def bad_request_object
     {
       errors: [
         {
           status: '400',
           title: @error.message
+        }
+      ]
+    }
+  end
+
+  def bad_request
+    {
+      errors: [
+        {
+          status: '400',
+          title: @error
         }
       ]
     }
