@@ -12,4 +12,14 @@ class CountriesService
   def get_list_of_countries
     get_url("all")
   end
+
+  def validate_country(country)
+    country.gsub!(" ", "%20")
+    validation = get_url("name/#{country}")
+    if validation.class == Hash
+      validation[:status] == 200
+    else
+      validation.first[:name][:common].class == String
+    end
+  end
 end
