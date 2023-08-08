@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyC5Up1UEl2-Aw8nYorkNS5oVOkwL7RDhQY&part=snippet&q=Laos
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=key&part=snippet&q=Laos
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 06 Aug 2023 20:11:28 GMT
+      - Tue, 08 Aug 2023 15:59:21 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -45,7 +45,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#searchListResponse",
-          "etag": "qPCf1iw0vbtS0-ixzeK91zMCJtY",
+          "etag": "XKEZsEEsKcdyHqJux3_vyvb6Tjo",
           "nextPageToken": "CAUQAA",
           "regionCode": "US",
           "pageInfo": {
@@ -89,7 +89,7 @@ http_interactions:
             },
             {
               "kind": "youtube#searchResult",
-              "etag": "7br3RCyoWxxQOLyjIIDgqN365RE",
+              "etag": "YFeSm7y7DqnFYIJNFqk6eU9j7DE",
               "id": {
                 "kind": "youtube#playlist",
                 "playlistId": "PLVRhJQ5GttaJJo5HY1JcEVihUpSV6fz5o"
@@ -191,39 +191,39 @@ http_interactions:
             },
             {
               "kind": "youtube#searchResult",
-              "etag": "iMiqeyY5ZfGU5Sp0kd3r0KS0ywA",
+              "etag": "x1rfaVJ7IrwZtuf6kpyBkeol5NA",
               "id": {
                 "kind": "youtube#video",
-                "videoId": "fK2p_ZcWUl8"
+                "videoId": "eE-p4ySG-nk"
               },
               "snippet": {
-                "publishedAt": "2022-01-04T04:33:10Z",
+                "publishedAt": "2021-08-21T03:00:29Z",
                 "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
-                "title": "A Super Quick History of the Marshall Islands",
-                "description": "Audio Requiring Attribution: https://freesound.org/people/CGEffex/sounds/95745/ Pictures Requiring Attribution: UNESCO: ...",
+                "title": "A Super Quick History of Kyrgyzstan",
+                "description": "Audio Requiring Attribution: Nurlan Shantayev: https://commons.wikimedia.org/wiki/File:Kyrgyz_Komuz._Philadelphia,_PA ...",
                 "thumbnails": {
                   "default": {
-                    "url": "https://i.ytimg.com/vi/fK2p_ZcWUl8/default.jpg",
+                    "url": "https://i.ytimg.com/vi/eE-p4ySG-nk/default.jpg",
                     "width": 120,
                     "height": 90
                   },
                   "medium": {
-                    "url": "https://i.ytimg.com/vi/fK2p_ZcWUl8/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/eE-p4ySG-nk/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                   },
                   "high": {
-                    "url": "https://i.ytimg.com/vi/fK2p_ZcWUl8/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/eE-p4ySG-nk/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                   }
                 },
                 "channelTitle": "Mr History",
                 "liveBroadcastContent": "none",
-                "publishTime": "2022-01-04T04:33:10Z"
+                "publishTime": "2021-08-21T03:00:29Z"
               }
             }
           ]
         }
-  recorded_at: Sun, 06 Aug 2023 20:11:28 GMT
+  recorded_at: Tue, 08 Aug 2023 15:59:21 GMT
 recorded_with: VCR 6.2.0
