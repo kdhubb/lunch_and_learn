@@ -187,40 +187,44 @@
           1,
           1,
           1,
-          1,
           null,
           null,
           null
         ]
       },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/models/favorite.rb": {
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           1,
           1,
+          5,
+          4,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          null,
           null
         ]
       },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/models/application_record.rb": {
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/models/user_spec.rb": {
-        "lines": [
-          1,
           null,
           1,
-          1,
-          2,
-          2,
-          2,
-          2,
-          null,
+          3,
           null,
           1,
-          2,
+          0,
           null,
           null
         ]
@@ -236,8 +240,78 @@
           1,
           null
         ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/serializers/error_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1691453978
+    "timestamp": 1691455469
   }
 }

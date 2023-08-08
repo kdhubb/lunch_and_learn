@@ -23,6 +23,9 @@ RSpec.describe "Create a New User" do
       expect(parsed[:data][:attributes][:name]).to eq("Odell")
       expect(parsed[:data][:attributes][:email]).to eq("goodboy@ruffruff.com")
       expect(parsed[:data][:attributes][:api_key]).to be_a(String)
+      expect(User.last.name).to eq("Odell")
+      expect(User.last.email).to eq("goodboy@ruffruff.com")
+      expect(User.last.password_digest).to be_a(String)
     end
 
     it "sends an error if password and password confirmation don't match" do 

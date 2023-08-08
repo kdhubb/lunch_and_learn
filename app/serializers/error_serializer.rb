@@ -8,7 +8,7 @@ class ErrorSerializer
       errors: [
         {
           status: '404',
-          title: @error.message
+          title: @error
         }
       ]
     }
