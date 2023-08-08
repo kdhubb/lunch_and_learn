@@ -379,7 +379,100 @@
           null
         ]
       },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/video_facade.rb": {
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/countries_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          250,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/facades/image_facade_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/image_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
+          4,
+          30,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/facades/learning_resource_facade_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/learning_resource_facade.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/facades/recipe_facade_spec.rb": {
         "lines": [
           1,
           1,
@@ -401,6 +494,32 @@
       "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/models/favorite_spec.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/recipe_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
           null,
           1,
           1,
@@ -430,11 +549,6 @@
           1,
           1,
           2,
-          2,
-          2,
-          2,
-          null,
-          null,
           1,
           2,
           null,
@@ -475,6 +589,43 @@
           1,
           null,
           null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/facades/video_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          5,
+          2,
+          null,
+          3,
+          3,
+          3,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/models/country_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
           null
         ]
       },
@@ -482,7 +633,6 @@
         "lines": [
           1,
           1,
-          null,
           1,
           252,
           null,
@@ -502,11 +652,6 @@
           1,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/image.rb": {
-        "lines": [
           1,
           1,
           null,
@@ -524,123 +669,6 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/learning_resource.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          4,
-          4,
-          4,
-          4,
-          null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/poros/recipe_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/poros/recipe.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          47,
-          47,
-          47,
-          47,
-          47,
-          null,
-          null,
-          1,
-          41,
-          null,
-          null
-        ]
-      },
-      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/poros/video_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
           null,
           null
         ]
@@ -651,6 +679,328 @@
           1,
           null,
           null,
+          1,
+          5,
+          5,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/requests/api/v1/learning_resources/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/requests/api/v1/recipes/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/serializers/recipe_serializer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          5,
+          null,
+          6,
+          null,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/serializers/recipe_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/services/countries_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/countries_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/services/image_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/image_service.rb": {
+        "lines": [
+          1,
+          1,
+          5,
+          5,
+          null,
+          null,
+          null,
+          1,
+          5,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/services/recipe_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/recipe_service.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/spec/services/video_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/services/video_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/serializers/learning_resource_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kdhubbard/mod_3/projects/lunch_and_learn/app/controllers/api/v1/recipes_controller.rb": {
+        "lines": [
           1,
           5,
           5,
@@ -1455,6 +1805,6 @@
         ]
       }
     },
-    "timestamp": 1691457862
+    "timestamp": 1691360954
   }
 }
