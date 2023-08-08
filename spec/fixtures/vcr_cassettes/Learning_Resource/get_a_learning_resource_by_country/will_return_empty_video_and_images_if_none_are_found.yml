@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.unsplash.com/search/photos?client_id=EN0RmGFQq1-JEfGrRX0AINTHT7oI6b--wrk7Ysb-4qU&query=
+    uri: https://api.unsplash.com/search/photos?client_id=client_id&query=
     body:
       encoding: US-ASCII
       string: ''
@@ -65,21 +65,21 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 06 Aug 2023 22:27:26 GMT
+      - Tue, 08 Aug 2023 15:59:19 GMT
       Age:
-      - '501'
+      - '0'
       X-Served-By:
-      - cache-iad-kcgs7200089-IAD, cache-den8263-DEN
+      - cache-iad-kcgs7200089-IAD, cache-den8255-DEN
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
       - 0, 1
       X-Timer:
-      - S1691360846.470941,VS0,VE6
+      - S1691510360.624178,VS0,VE76
       Vary:
       - Accept-Encoding,Authorization,Accept-Language,client-geo-region,Accept
     body:
       encoding: ASCII-8BIT
       string: '{"total":0,"total_pages":0,"results":[]}'
-  recorded_at: Sun, 06 Aug 2023 22:27:26 GMT
+  recorded_at: Tue, 08 Aug 2023 15:59:19 GMT
 recorded_with: VCR 6.2.0
