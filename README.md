@@ -20,6 +20,12 @@ To setup, fork and clone then run `bundle install`
 
 ---
 
+**Learning Goals**
+
+This project was completed as part of the Mod 3 curriculum at Turing School of Software and Design. This work culminates learning from the mod, including session authentication, object serialization, API request stubbing, working with third party APIs (facades, services, and poros) and how to create and organize a REST API. 
+
+---
+
 **Enpoints and JSON Schema**
 
 *Request recipes by country:*
@@ -166,3 +172,94 @@ This post request will create a new table entry in the users table and respond w
 
 ---
 
+*Session Authentication Request*
+
+POST /api/v1/sessions
+Content-Type: application/json
+Accept: application/json
+
+```
+{
+  "email": "goodboy@ruffruff.com",
+  "password": "treats4lyf"
+}
+```
+
+This post request will authenticate the user given their password and return the following response: 
+
+```
+{
+  "data": {
+    "type": "user",
+    "id": "1",
+    "attributes": {
+      "name": "Odell",
+      "email": "goodboy@ruffruff.com",
+      "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
+---
+
+*Favorites Request*
+
+Add a favorite for a particular user. Users can add favorite recipes to their list with the following request. This will add a table entry in the favorites table, with user_id as a foreign key. 
+
+POST /api/v1/favorites
+Content-Type: application/json
+Accept: application/json
+
+```
+{
+    "api_key": "jgn983hy48thw9begh98h4539h4",
+    "country": "thailand",
+    "recipe_link": "https://www.tastingtable.com/.....",
+    "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)"
+}
+```
+
+A successful request to this endpoint will yield the following response: 
+
+```
+{
+    "success": "Favorite added successfully"
+}
+```
+---
+*Get a user's favorites*
+
+You can request a list of a given user's favorited recipes with the following request: 
+
+GET /api/v1/favorites?api_key=jgn983hy48thw9begh98h4539h4
+Content-Type: application/json
+Accept: application/json
+
+This will yield the following example response: 
+
+```
+{
+    "data": [
+        {
+            "id": "1",
+            "type": "favorite",
+            "attributes": {
+                "recipe_title": "Recipe: Egyptian Tomato Soup",
+                "recipe_link": "http://www.thekitchn.com/recipe-egyptian-tomato-soup-weeknight....",
+                "country": "egypt",
+                "created_at": "2022-11-02T02:17:54.111Z"
+            }
+        },
+        {
+            "id": "2",
+            "type": "favorite",
+            "attributes": {
+                "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)",
+                "recipe_link": "https://www.tastingtable.com/.....",
+                "country": "thailand",
+                "created_at": "2022-11-07T03:44:08.917Z"
+            }
+        }
+    ]
+ }    
+ ```
