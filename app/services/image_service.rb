@@ -1,6 +1,6 @@
 class ImageService
   def conn
-    Faraday.new(url: "https://api.unsplash.com/search/photos") do |faraday|
+    Faraday.new(url: 'https://api.unsplash.com/search/photos') do |faraday|
       faraday.params['client_id'] = ENV['UNSPLASH-ACCESS']
     end
   end

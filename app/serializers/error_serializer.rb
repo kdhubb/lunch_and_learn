@@ -8,12 +8,12 @@ class ErrorSerializer
       errors: [
         {
           status: '404',
-          title: @error.message
+          title: @error
         }
       ]
     }
   end
-  
+
   def bad_request_object
     {
       errors: [

@@ -4,7 +4,7 @@ class Recipe
               :image,
               :country,
               :id
-              
+
   def initialize(data = {})
     @id = nil
     @title = data[:recipe][:label]
