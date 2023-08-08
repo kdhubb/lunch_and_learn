@@ -1,4 +1,4 @@
-class LearningResourceFacade 
+class LearningResourceFacade
   def initialize(params)
     @country = params[:country]
   end
@@ -7,9 +7,9 @@ class LearningResourceFacade
     video = VideoFacade.new.video_by_country(@country)
     images = ImageFacade.new.images_by_country(@country)
     resource = LearningResource.new({
-      country: @country,
-      video: video,
-      images: images
-    })
+                                      country: @country,
+                                      video:,
+                                      images:
+                                    })
   end
 end

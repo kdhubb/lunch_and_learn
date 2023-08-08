@@ -1,6 +1,5 @@
-class ImageFacade 
-
-  def service 
+class ImageFacade
+  def service
     ImageService.new
   end
 

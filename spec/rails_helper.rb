@@ -1,14 +1,15 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 
-require "simplecov"
+require 'simplecov'
+require 'bcrypt'
 
-SimpleCov.start 
+SimpleCov.start
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -60,7 +61,7 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://rspec.info/features/6-0/rspec-rails
   config.infer_spec_type_from_file_location!
-  
+
   config.include(RSpecJSONAPISerializer::Matchers, type: :serializer)
 
   # Filter lines from Rails gems in backtraces.

@@ -1,11 +1,10 @@
 class VideoFacade
-
   def service
     VideoService.new
   end
 
   def video_by_country(country)
-    if country == "" || !country
+    if country == '' || !country
       {}
     else
       videos = service.get_videos_by_country(country)
