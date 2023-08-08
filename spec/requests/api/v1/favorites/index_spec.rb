@@ -30,9 +30,26 @@ RSpec.describe "Get Favorites" do
       parsed = JSON.parse(response.body, symbolize_names: true)
 
       expected = {
-          "data": []
-      }
+            "data": []
+        }
       expect(parsed[:data]).to be_an(Array)
+      expect(parsed).to eq(expected)
+    end
+
+    it "returns an error for invalid api key" do 
+      get "/api/v1/favorites?api_key=dog_bones"
+
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expected = {
+            "errors": [
+                {
+                    "status": "404",
+                    "title": "Invalid API key"
+                }
+            ]
+        }
+        
       expect(parsed).to eq(expected)
     end
   end
