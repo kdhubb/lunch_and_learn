@@ -1,7 +1,7 @@
 class Api::V1::FavoritesController < ApplicationController
   def create
     user = User.find_by(api_key: params[:api_key])
-    favorite = user.favorites.find_by(recipe_link: params[:recipe_link])
+    favorite = user&.favorites&.find_by(recipe_link: params[:recipe_link])
     if user && !favorite
       user.favorites.create!(favorites_params)
       render json: { success: 'Favorite added successfully' }, status: :created
