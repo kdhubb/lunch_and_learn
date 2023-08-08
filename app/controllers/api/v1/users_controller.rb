@@ -7,11 +7,12 @@ class Api::V1::UsersController < ApplicationController
         render json: UserSerializer.new(user), status: :created
       end
     else
-      render json: ErrorSerializer.new("Password and password confirmation must match").bad_request, status: :bad_request
+      render json: ErrorSerializer.new('Password and password confirmation must match').bad_request,
+             status: :bad_request
     end
   end
 
-  private 
+  private
 
   def user_params
     params.permit(:name, :email, :password, :password_digest)

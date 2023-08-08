@@ -1,6 +1,6 @@
 class CountriesService
   def conn
-    Faraday.new(url: "https://restcountries.com/v3.1/") do |faraday|
+    Faraday.new(url: 'https://restcountries.com/v3.1/') do |faraday|
     end
   end
 
@@ -10,6 +10,6 @@ class CountriesService
   end
 
   def get_list_of_countries
-    get_url("all")
+    get_url('all')
   end
 end

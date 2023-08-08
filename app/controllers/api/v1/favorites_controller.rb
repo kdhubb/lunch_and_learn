@@ -3,13 +3,13 @@ class Api::V1::FavoritesController < ApplicationController
     user = User.find_by(api_key: params[:api_key])
     if user
       user.favorites.create!(favorites_params)
-      render json: { success: "Favorite added successfully" }, status: :created
+      render json: { success: 'Favorite added successfully' }, status: :created
     else
-      render json: ErrorSerializer.new("Invalid API key").not_found, status: :not_found
+      render json: ErrorSerializer.new('Invalid API key').not_found, status: :not_found
     end
   end
 
-  private 
+  private
 
   def favorites_params
     params.permit(:country, :recipe_link, :recipe_title)

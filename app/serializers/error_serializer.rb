@@ -13,7 +13,7 @@ class ErrorSerializer
       ]
     }
   end
-  
+
   def bad_request_object
     {
       errors: [
